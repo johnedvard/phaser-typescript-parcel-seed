@@ -1,33 +1,21 @@
 {
-  "name": "phaser-parcel",
+  "name": "phaser-circle-puzzle",
   "version": "1.0.0",
-  "description": "A Phaser 3 game template using Parcel bundler",
-  "main": "src/index.html",
+  "description": "",
+  "main": "index.html",
   "scripts": {
-    "build": "parcel build src/index.html --public-url ./ --experimental-scope-hoisting",
-    "watch": "parcel watch src/index.html",
-    "start": "parcel serve src/index.html",
-    "clean": "rm -v dist/*",
-    "test": "eslint src"
+    "start": "parcel index.html",
+    "build": "parcel build index.html --public-url ./"
   },
-  "keywords": [
-    "phaser",
-    "phaser3",
-    "phaser-boilerplate"
-  ],
-  "author": "samme",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "dependencies": {
-    "phaser": "^3.20.1"
+    "parcel": "^1.12.3",
+    "phaser": "^3.23.0"
   },
   "devDependencies": {
     "cssnano": "^4.1.10",
-    "eslint": "^5.16.0",
-    "eslint-config-semistandard": "^13.0.0",
-    "eslint-config-standard": "^12.0.0",
-    "eslint-plugin-import": "^2.17.3",
-    "eslint-plugin-node": "^8.0.1",
-    "eslint-plugin-promise": "^4.1.1",
-    "eslint-plugin-standard": "^4.0.0"
+    "typescript": "^3.9.6"
   }
 }

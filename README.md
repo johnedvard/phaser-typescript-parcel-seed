@@ -1,79 +1,39 @@
-Phaser 3 with Parcel
-====================
+# Game Jam Seed
 
-This is a simple Phaser game template using [Parcel](https://parceljs.org). Most common transformations ([CoffeeScript](https://parceljs.org/coffeeScript.html), [Babel/Flow](https://parceljs.org/javascript.html), [TypeScript](https://parceljs.org/typeScript.html)) work “out of the box”.
+This is a project used as a seed to start creating your game without doing all the heavy lifting by setting up your project
 
-Use
----
+This project uses typescript and Kontra as the game engine.
 
-```sh
-# If you don't have Parcel, install it:
-npm install -g parcel-bundler
+## Start testing your game
 
-# Clone or download this repo.
-# From the project directory, install:
+Run the following in your terminal window
+
+```
 npm install
-
-# Auto-compile and run dev server:
 npm run start
+```
 
-# Compile for production:
+open http://localhost:1234/ in your browser
+
+## Build
+
+```
 npm run build
 ```
 
-You can edit these scripts in [package.json](./package.json) to suit your needs. See:
+## Test online using Netlify
 
-- [Parcel: Getting Started](https://parceljs.org/getting_started.html)
-- [Parcel: Production](https://parceljs.org/production.html)
-- [Parcel: CLI](https://parceljs.org/cli.html)
+The simplest way to share your game with friends is to create an account on Netlify.
+Then drag and drop the dist folder into your new site.
 
-Game assets
------------
+### Continuous integration
 
-Static assets used in your JavaScript must be imported:
+Tired of dragging and dropping the build to netlify?
+Set up a hook to your github repo, and start building when you push to your desired branch.
 
-```javascript
-import space from './assets/space.png'); // -> './space.89e3a46b.png'
-// OR
-import images from './assets/*.png'; // -> { space: './space.89e3a46b.png', … }
-```
+-- TODO create instructions on how to deploy to Netlify
 
-See [BootScene](./src/BootScene.js) for an example.
+## Monetizition
 
-If you prefer, you can [use a plugin to copy static assets](https://www.npmjs.com/search?q=parcel%20plugin%20copy) instead.
-
-Package aliasing
-----------------
-
-You can use [package.alias](https://parceljs.org/module_resolution.html#aliasing) to specify an alternative Phaser build, e.g.,
-
-```json
-{
-  "name": "my-phaser-game",
-  "alias": {
-    "phaser": "./node_modules/phaser/src/phaser-arcade-physics.js"
-  }
-}
-```
-
-Custom Phaser
--------------
-
-See the [imports branch](https://github.com/samme/phaser-parcel/tree/imports).
-
-
-Hot reload
-----------
-
-When running the dev server the game is destroyed and then recreated after you save changes to your files. Rarely, this can fail. Just refresh the browser.
-
-If you don't like [hot reload](https://parceljs.org/hmr.html) at all, you can turn it off:
-
-```sh
-parcel serve src/index.html --no-hmr
-```
-
-More Phaser with Parcel
------------------------
-
-- [phaser3-parcel-template](https://github.com/ourcade/phaser3-parcel-template)
+This game also includes some monetiziation from [Coil](https://coil.com/about), it uses my personal coil link,
+but feel free to change it with your own.
